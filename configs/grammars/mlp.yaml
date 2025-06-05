@@ -1,0 +1,14 @@
+network:
+  sequential: 1
+
+module:
+  computation: 1
+
+computation_fn:
+  identity: 1
+  linear(16): 1
+  linear(32): 1
+  linear(64): 1
+  linear(128): 1
+  relu: 1
+  sigmoid: 1

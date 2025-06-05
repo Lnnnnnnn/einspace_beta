@@ -1,0 +1,50 @@
+seed: 0
+
+# search details
+search_space: "einspace"
+search_strategy: "mcts"
+steps: 1000
+backtrack: true
+mode: "iterative"
+time_limit: 300
+max_id_limit: 10000
+depth_limit: 20
+mem_limit: 4096
+acquisition_fn: "uct"
+exploration_weight: 1.0
+reward_mode: "sum"
+
+# evaluation details
+dataset: "addnist"
+load_in_gpu: True
+num_classes: 20
+channels: 3
+image_size:
+  - 28
+  - 28
+input_mode: "im"
+
+# training details
+score: "xe"
+epochs: 8
+patience: 8
+test_epochs: 64
+batch_size: 256
+hpo_runs: 1
+lr: 0.04
+momentum: 0.9
+weight_decay: 0.0003
+
+# logging and plotting
+verbose_search: false
+verbose_eval: false
+visualise: false
+visualise_scale: 0.8
+print_after: 10000
+
+# saving results and figures
+figures_path: "figures"
+results_path: "results"
+
+# continue search
+continue_search: true

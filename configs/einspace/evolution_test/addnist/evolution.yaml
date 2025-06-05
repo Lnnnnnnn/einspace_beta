@@ -1,0 +1,61 @@
+seed: 0
+
+# search details
+search_space: "einspace"
+search_strategy: "evolution"
+steps: 1000
+backtrack: true
+mode: "iterative"
+time_limit: 300
+max_id_limit: 10000
+depth_limit: 20
+mem_limit: 8192
+individual_mem_limit: 1024
+batch_pass_limit: 0.1
+# search strategy specific details
+regularised: True
+population_size: 10 # 100
+architecture_seed: None
+mutation_strategy: "random"
+mutation_rate: 1.0
+crossover_strategy: "one_point"
+crossover_rate: 0
+selection_strategy: "tournament"
+tournament_size: 10
+elitism: False
+n_tries: 10
+
+# evaluation details
+dataset: "addnist"
+load_in_gpu: True
+num_classes: 20
+channels: 3
+image_size:
+  - 28
+  - 28
+input_mode: "im"
+
+# training details
+score: "xe"
+epochs: 8
+patience: 8
+test_epochs: 64
+batch_size: 256
+hpo_runs: 1
+lr: 0.04
+momentum: 0.9
+weight_decay: 0.0003
+
+# logging and plotting
+verbose_search: false
+verbose_eval: true
+visualise: false
+visualise_scale: 0.8
+print_after: 10000
+
+# saving results and figures
+figures_path: "figures"
+results_path: "results"
+
+# continue search
+continue_search: true

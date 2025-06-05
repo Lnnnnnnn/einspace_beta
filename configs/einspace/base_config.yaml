@@ -1,0 +1,55 @@
+# search details
+search_space: "einspace"
+search_strategy: "evolution"
+steps: 1000
+backtrack: true
+mode: "iterative"
+time_limit: 300
+max_id_limit: 10000
+depth_limit: 20
+mem_limit: 8192
+individual_mem_limit: 1024
+batch_pass_limit: 0.1
+# search strategy specific details
+population_size: 100
+architecture_seed: None
+mutation_strategy: "random"
+selection_strategy: "tournament"
+tournament_size: 10
+n_tries: 100
+
+# evaluation details
+# dataset: "cifar10"
+# load_in_gpu: False
+# num_classes: 10
+# channels: 3
+# image_size:
+#   - 32
+#   - 32
+# input_mode: "im"
+
+# training details
+# score: "xe"
+# epochs: 25
+# patience: 25
+# test_epochs: 200
+# batch_size: 128
+# hpo_runs: 1
+# lr: 0.1
+# momentum: 0.9
+# weight_decay: 0.0005
+
+# logging and plotting
+verbose_search: false
+verbose_eval: false
+visualise: false
+visualise_scale: 0.8
+print_after: 10000
+
+# saving results and figures
+figures_path: "figures"
+results_path: "results"
+
+# continue search
+continue_search: true
+load_from: None

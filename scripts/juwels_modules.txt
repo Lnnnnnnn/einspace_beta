@@ -1,0 +1,12 @@
+zsh
+GCC
+parallel
+Python
+PyTorch
+torchaudio
+torchvision
+Graphviz
+h5py
+librosa
+SciPy-Stack
+scikit-learn
